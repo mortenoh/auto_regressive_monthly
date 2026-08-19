@@ -16,6 +16,11 @@ _NON_COVARIATE_COLUMNS = frozenset({"time_period", "location", "disease_cases", 
 # the tuned configuration baked into AutoRegressiveModel).
 MODEL_OPTIONS = (
     "n_iter",
+    "seed_offset",
+    "early_stopping",
+    "validation_periods",
+    "patience",
+    "eval_every",
     "context_length",
     "n_ensemble",
     "learning_rate",
